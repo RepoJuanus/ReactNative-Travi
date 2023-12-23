@@ -20,13 +20,13 @@ const styles = StyleSheet.create({
         width: "80%",
         marginHorizontal: "10%",
         alignItems: 'center',
-        margin: 10,
-        padding: 10,
+        margin: 7,
+        padding: 8,
         borderRadius: 10,
         backgroundColor: colors.color3,
     },
     text:{
-        fontSize: 18,
+        fontSize: 17,
         fontFamily: 'Josefin'
       }
 })

@@ -16,13 +16,13 @@ export default Header
 const styles = StyleSheet.create({
     container: {
         backgroundColor: colors.color2,
-        height: 80,
+        height: 60,
         width: ' 100%',
         justifyContent: 'center',
         alignItems: 'center',
     },
     text: {
-        fontSize: 35,
+        fontSize: 30,
         fontFamily: 'JosefinSBI',
     },
 })

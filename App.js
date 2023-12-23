@@ -1,22 +1,14 @@
 import { useFonts } from 'expo-font';
-import { useState } from 'react';
 import { SafeAreaView, StyleSheet, StatusBar } from 'react-native';
 import { colors } from './src/Global/colors';
-
-import Navigator from './src/navigation/Navigator';
+import TabNavigator from './src/navigation/TabNavigator';
+import { fonts } from './src/Global/fonts';
 
 
 
 const App = () => {
-
-  const [fontLoaded] = useFonts({
-    JosefinSBI: require('./assets/fonts/Josefin_Sans/static/JosefinSans-SemiBoldItalic.ttf'),
-    JosefinSB: require('./assets/fonts/Josefin_Sans/static/JosefinSans-SemiBold.ttf'),
-    JosefinM: require('./assets/fonts/Josefin_Sans/static/JosefinSans-Medium.ttf'),
-    Josefin: require('./assets/fonts/Josefin_Sans/static/JosefinSans-Regular.ttf'),
-    Lobster: require('./assets/fonts/Lobster/Lobster-Regular.ttf')
-  })
-
+  
+  const [fontLoaded] = useFonts(fonts)
   if (!fontLoaded) return null
 
   return (
@@ -26,7 +18,7 @@ const App = () => {
           barStyle='default'
         />
         <SafeAreaView/>
-        <Navigator/>
+        <TabNavigator/>
     </>
   );
 }
