@@ -3,22 +3,24 @@ import { SafeAreaView, StyleSheet, StatusBar } from 'react-native';
 import { colors } from './src/Global/colors';
 import TabNavigator from './src/navigation/TabNavigator';
 import { fonts } from './src/Global/fonts';
-
-
+import store from './src/app/store'
+import { Provider } from 'react-redux'
 
 const App = () => {
-  
+
   const [fontLoaded] = useFonts(fonts)
   if (!fontLoaded) return null
 
   return (
     <>
-        <StatusBar
-          backgroundColor={colors.color5}
-          barStyle='default'
-        />
-        <SafeAreaView/>
-        <TabNavigator/>
+      <StatusBar
+        backgroundColor={colors.color5}
+        barStyle='default'
+      />
+      <SafeAreaView />
+      <Provider store={store}>
+        <TabNavigator />
+      </Provider>
     </>
   );
 }
