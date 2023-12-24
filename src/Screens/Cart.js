@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react'
 import allCart from '../Data/cart.json'
 import CartItem from '../Components/CartItem'
 import { colors } from '../Global/colors'
-import Counter from '../Components/Counter'
+
 
 const Cart = () => {
     const [cart, setCart] = useState([])
@@ -19,7 +19,7 @@ const Cart = () => {
     }, [cart])
     return (
         <View>
-            <Counter/>
+         
             <FlatList
                 data={cart}
                 keyExtractor={item => item.id}
