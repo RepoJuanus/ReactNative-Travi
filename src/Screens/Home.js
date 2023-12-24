@@ -1,5 +1,4 @@
-import { StyleSheet, Text, View, Button, TextInput } from 'react-native'
-import React, {useState} from 'react'
+import { StyleSheet } from 'react-native'
 import Categories from '../Components/Categories'
 
 
