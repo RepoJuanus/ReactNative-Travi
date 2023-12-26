@@ -18,6 +18,7 @@ const App = () => {
         barStyle='default'
       />
       <SafeAreaView />
+      
       <Provider store={store}>
         <TabNavigator />
       </Provider>
