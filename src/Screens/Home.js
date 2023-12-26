@@ -3,7 +3,7 @@ import Categories from '../Components/Categories'
 
 
 const Home = ({navigation, route}) => {
-const [count, setCount] = useState(0)
+
 
     return (
         <>

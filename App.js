@@ -3,8 +3,8 @@ import { SafeAreaView, StyleSheet, StatusBar } from 'react-native';
 import { colors } from './src/Global/colors';
 import TabNavigator from './src/navigation/TabNavigator';
 import { fonts } from './src/Global/fonts';
-import { store } from './src/app/store'
-import { Provider } from 'react-redux'
+import { store } from './src/app/store';
+import { Provider } from 'react-redux';
 
 const App = () => {
 
