@@ -15,10 +15,12 @@ export const shopSlice = createSlice({
     name: "shop",
     initialState,
     reducers: {
-
-    }
+        setProductsFilteredByCategory: (state, actions)=>{
+                state.value.productsFilteredByCategory = state.value.products.filter(product => product.category == actions.payload)
+        }
+    },
 })
 
-export const { } = shopSlice.actions
+export const { setProductsFilteredByCategory } = shopSlice.actions
 
 export default shopSlice.reducer

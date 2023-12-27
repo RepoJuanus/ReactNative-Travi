@@ -4,7 +4,7 @@ import { useSelector, useDispatch } from 'react-redux'
 import CategoryItem from './CategoryItem'
 
 const Categories = ({navigation, route}) => {
-  const categories = useSelector((state) => state.shop.value.Categories)
+  const categories = useSelector((state) => state.shop.value.categories)
   const dispatch = useDispatch()
   return (
     <FlatList
